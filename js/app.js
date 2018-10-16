@@ -101,7 +101,13 @@ class Enemy {
     }
 }
 
+const player = new Hero(),
+    enemy1 = new Enemy(-101, 0, 150),
+    enemy2 = new Enemy(-101, 83, 120),
+    enemy3 = new Enemy((-101 * 2.5), 83, 180),
+    allEnemies = [];
 
+allEnemies.push(enemy1, enemy2, enemy3);
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
