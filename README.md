@@ -23,3 +23,7 @@ git clone
 - Customize all game assets/resources
 - Integrate a storyline
 - Add a game completion modal
+- Player can choose avatar
+- Add collectible items on screen
+- Add multiple enemy types
+- Track total play time and items collected
