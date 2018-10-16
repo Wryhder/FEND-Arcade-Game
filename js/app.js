@@ -66,32 +66,40 @@ class Hero {
     }
 }
 
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
+class Enemy {
+    constructor(x, y, speed) {
+        this.x = x;
+        this.y = y + 60;
+        this.speed = speed;
+        this.step = 101;
+        this.boundary = this.step * 5;
+        this.resetX = -this.step;
     this.sprite = 'images/enemy-bug.png';
-};
+    }
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
-Enemy.prototype.update = function(dt) {
+    update(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-};
 
-// Draw the enemy on the screen, required method for game
-Enemy.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-};
+        // If enemy is not past the boundary
+        if (this.x < this.boundary) {
+            // Move forward
+            // Increment x by speed * dt
+            this.x += this.speed * dt;
+        } else {
+            // Reset pos to start
+            this.x = this.resetX;
+        }
 
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
+    }
 
-
-// Now instantiate your objects.
-// Place all enemy objects in an array called allEnemies
-// Place the player object in a variable called player
+    render() {
+        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    }
+}
 
 
 
