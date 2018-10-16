@@ -37,25 +37,25 @@ class Hero {
     handleInput(input) {
         // Update player sprite on current x and y coord position
         switch (input) {
-            case 'up':
-                if (this.y > this.jump) {
-                    this.y -= this.jump;
-                }
-                break;
-            case 'down':
-                if (this.y < this.jump * 4) {
-                    this.y += this.jump;
-                }
-                break;
-            case 'left':
-                if (this.x > 0) {
-                    this.x -= this.step;
-                }
-                break;
-            case 'right':
-                if (this.x < this.step * 4) {
-                    this.x += this.step;
-                }
+        case 'up':
+            if (this.y > this.jump) {
+                this.y -= this.jump;
+            }
+            break;
+        case 'down':
+            if (this.y < this.jump * 4) {
+                this.y += this.jump;
+            }
+            break;
+        case 'left':
+            if (this.x > 0) {
+                this.x -= this.step;
+            }
+            break;
+        case 'right':
+            if (this.x < this.step * 4) {
+                this.x += this.step;
+            }
         }
     }
 
