@@ -16,3 +16,10 @@ git clone
 ```
 2. Spin up a local server or open `index.html` in a browser
 
+
+## Todo
+<!-- - Implement automated integration testing -->
+- Rewrite game from scratch (TDD)
+- Customize all game assets/resources
+- Integrate a storyline
+- Add a game completion modal
