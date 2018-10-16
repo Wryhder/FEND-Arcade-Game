@@ -8,7 +8,7 @@ Use the keyboard arrow keys to move around.
 
 **Head over [here](https://wryhder.github.io/FEND-Arcade-Game/) to play**, or follow the instructions below to run game locally.
 
-## Run game locally
+## Run app locally
 
 1. Clone this repo
 ```
