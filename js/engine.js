@@ -122,7 +122,6 @@ const Engine = (function (global) {
             ],
             numRows = 6,
             numCols = 5,
-            row, col;
 
         // Before drawing, clear existing canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
