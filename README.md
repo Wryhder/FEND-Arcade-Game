@@ -2,7 +2,7 @@
 
 ## Description
 
-The goal of the game is to reach the end of the field, any tiles on the row just before the water. If you collide with any enemies, you lose any progress made and start back at your beginning position.
+The goal of the game is to reach the end of the field, any tiles on the row just before the water, without colliding with enemy bugs. If you collide with any enemies, the game is reset.
 
 Use the keyboard arrow keys to move around.
 
