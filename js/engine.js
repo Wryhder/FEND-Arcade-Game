@@ -121,7 +121,7 @@ const Engine = (function (global) {
                 'images/grass-block.png'    // Row 2 of 2 of grass
             ],
             numRows = 6,
-            numCols = 5,
+            numCols = 5;
 
         // Before drawing, clear existing canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
