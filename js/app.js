@@ -101,6 +101,7 @@ class Enemy {
     }
 }
 
+// Instantiate all objects
 const player = new Hero(),
     enemy1 = new Enemy(-101, 0, 150),
     enemy2 = new Enemy(-101, 83, 120),
@@ -110,7 +111,7 @@ const player = new Hero(),
 allEnemies.push(enemy1, enemy2, enemy3);
 
 // This listens for key presses and sends the keys to your
-// Player.handleInput() method. You don't need to modify this.
+// Player.handleInput() method
 document.addEventListener('keyup', function (e) {
     const allowedKeys = {
         37: 'left',
