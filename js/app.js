@@ -74,15 +74,15 @@ class Enemy {
         this.step = 101;
         this.boundary = this.step * 5;
         this.resetX = -this.step;
-    this.sprite = 'images/enemy-bug.png';
+        this.sprite = 'images/enemy-bug.png';
     }
 
-// Update the enemy's position, required method for game
-// Parameter: dt, a time delta between ticks
+    // Update the enemy's position, required method for game
+    // Parameter: dt, a time delta between ticks
     update(dt) {
-    // You should multiply any movement by the dt parameter
-    // which will ensure the game runs at the same speed for
-    // all computers.
+        // You should multiply any movement by the dt parameter
+        // which will ensure the game runs at the same speed for
+        // all computers.
 
         // If enemy is not past the boundary
         if (this.x < this.boundary) {
