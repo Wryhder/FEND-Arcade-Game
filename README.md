@@ -6,5 +6,13 @@ The goal is to get to the end of the field, any tiles on the row just before the
 
 Use the keyboard arrow keys to move around.
 
+**Head over [here]() to play**, or follow the instructions below to run game locally.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Run game locally
+
+1. Clone this repo
+```
+git clone 
+```
+2. Spin up a local server or open `index.html` in a browser
+
