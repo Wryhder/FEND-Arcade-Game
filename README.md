@@ -6,7 +6,7 @@ The goal is to get to the end of the field, any tiles on the row just before the
 
 Use the keyboard arrow keys to move around.
 
-**Head over [here]() to play**, or follow the instructions below to run game locally.
+**Head over [here](https://wryhder.github.io/FEND-Arcade-Game/) to play**, or follow the instructions below to run game locally.
 
 ## Run game locally
 
