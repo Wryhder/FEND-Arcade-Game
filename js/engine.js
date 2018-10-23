@@ -166,7 +166,13 @@ const Engine = (function (global) {
      * those sorts of things. It's only called once by the init() method.
      */
     function reset() {
-        // noop
+        (function () {
+            const replayButton = document.querySelector('.replay');
+
+            replayButton.addEventListener('click', function () {
+                location.reload(true);
+            });
+        })();
     }
 
     /* Go ahead and load all of the images we know we're going to need to
