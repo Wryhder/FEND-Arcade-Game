@@ -17,7 +17,7 @@ Both classes have render() and update() methods used to render player and enemy 
 
 An engine provides game loop functionality.
 
-The game uses an image loading utility to ease the process of loading image files. The utility also includes a simple "caching" layer to enable reuse of cached images if there is an attempt to load the same image multiple times.
+The game uses an image loading utility to ease the process of loading image files. The utility includes a simple "caching" layer to enable reuse of cached images if there is an attempt to load the same image multiple times.
 
 ## Run app locally
 
