@@ -11,13 +11,13 @@ Use the keyboard arrow keys to move around.
 ## App Description
 
 Technologies used are HTML, CSS, JavaScript (including classes and IIFEs), and the Canvas API.
-There are two classes, Hero used to create the player, and Enemy, used to create several instance of the enemy bugs.
+There are two classes, Hero, used to create the player, and Enemy, used to create several instances of the enemy bugs.
 Both the Hero and Enemy classes have render() and update() methods used to render player and enemy sprites as well as update their positions.
-The player has a handleInput() method that responds to keypresses (arrow keys) and a resetHeroPos() method which resets the player's position whenever there is a collision with  an enemy bug.
+The player has a handleInput() method that responds to keypresses (arrow keys), and a resetHeroPos() method which resets the player's position whenever there is a collision with  an enemy bug.
 
 An engine provides game loop functionality.
 
-The game uses an image loading utility to ease the process of loading image files. The utility also includes a simple "caching" layer so it will reuse cached images if there is an attempt to load the same image multiple times.
+The game uses an image loading utility to ease the process of loading image files. The utility also includes a simple "caching" layer to enable reuse of cached images if there is an attempt to load the same image multiple times.
 
 ## Run app locally
 
