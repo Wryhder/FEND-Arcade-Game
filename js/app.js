@@ -10,16 +10,16 @@ class Hero {
         this.sprite = 'assets/char-princess-girl.png';
     }
 
-    // Draw hero sprite on current x and y coord position
+    // Draw hero sprite on current x and y coordinates
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 
+    // Update position
     update() {
-        // Update position
         for (let enemy of allEnemies) {
-            // Check collision here
-            // Did player x and y collide with enemy's?
+            // Did player collide with enemy bugs?
+            // if so, reset game
             if (this.y === enemy.y &&
                 (enemy.x + enemy.step / 2 > this.x &&
                     enemy.x < this.x + this.step / 2)) {
@@ -27,10 +27,11 @@ class Hero {
             }
         }
 
-        // Check win here
-        // Did player's x and y reach final tile?
+        // Win condition
+        // Did player reach final tile?
         if (this.y === -23) {
             this.wonGame = true;
+            
             (function showModal() {
                 const modal = document.querySelector('main');
                 modal.classList.toggle('hidden');
@@ -38,8 +39,8 @@ class Hero {
         }
     }
 
+    // Update player's position based on user input
     handleInput(input) {
-        // Update player sprite on current x and y coord position
         switch (input) {
         case 'up':
             if (this.y > this.jump || this.y === 60) {
@@ -63,8 +64,8 @@ class Hero {
         }
     }
 
+    // Reset player's current position to starting point
     resetHeroPos() {
-        // Set x and y to starting x and y
         this.x = this.startX;
         this.y = this.startY;
     }
@@ -84,22 +85,23 @@ class Enemy {
     // Update the enemy's position, required method for game
     // Parameter: dt, a time delta between ticks
     update(dt) {
-        // You should multiply any movement by the dt parameter
-        // which will ensure the game runs at the same speed for
+        // Any movement is multiplied by the dt parameter
+        // to ensure the game runs at the same speed for
         // all computers.
-
+        
         // If enemy is not past the boundary
         if (this.x < this.boundary) {
             // Move forward
             // Increment x by speed * dt
             this.x += this.speed * dt;
         } else {
-            // Reset pos to start
+            // Reset position to start
             this.x = this.resetX;
         }
 
     }
 
+    // Draw enemy using current x and y coordinates
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
@@ -114,8 +116,8 @@ const player = new Hero(),
 
 allEnemies.push(enemy1, enemy2, enemy3);
 
-// This listens for key presses and sends the keys to your
-// Player.handleInput() method
+// This listens for key presses and sends the keys to the
+// Hero.handleInput() method
 document.addEventListener('keyup', function (e) {
     const allowedKeys = {
         37: 'left',
