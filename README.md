@@ -1,6 +1,6 @@
 # Arcade Game
 
-## Game Description
+## How to Play
 
 **Head over [here](https://wryhder.github.io/FEND-Arcade-Game/) to play**, or follow the instructions below to run game locally.
 
