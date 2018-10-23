@@ -78,7 +78,7 @@ class Enemy {
         this.step = 101;
         this.boundary = this.step * 5;
         this.resetX = -this.step;
-        this.sprite = 'images/enemy-bug.png';
+        this.sprite = 'assets/enemy-bug.png';
     }
 
     // Update the enemy's position, required method for game
