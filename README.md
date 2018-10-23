@@ -23,7 +23,7 @@ The game uses an image loading utility to ease the process of loading image file
 
 1. Clone this repo
 ```
-git clone 
+git clone https://github.com/Wryhder/FEND-Classic-Arcade-Game-Clone.git
 ```
 2. Spin up a local server or open `index.html` in a browser
 
