@@ -42,7 +42,7 @@ class Hero {
         // Update player sprite on current x and y coord position
         switch (input) {
         case 'up':
-            if (this.y > this.jump) {
+            if (this.y > this.jump || this.y === 60) {
                 this.y -= this.jump;
             }
             break;
