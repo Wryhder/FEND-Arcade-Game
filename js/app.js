@@ -31,6 +31,10 @@ class Hero {
         // Did player's x and y reach final tile?
         if (this.y === 60) {
             this.wonGame = true;
+            (function showModal() {
+                const modal = document.querySelector('main');
+                modal.classList.toggle('hidden');
+            })();
         }
     }
 
