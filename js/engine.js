@@ -113,12 +113,12 @@ const Engine = (function (global) {
          * for that particular row of the game level.
          */
         let rowImages = [
-                'images/water-block.png',   // Top row is water
-                'images/stone-block.png',   // Row 1 of 3 of stone
-                'images/stone-block.png',   // Row 2 of 3 of stone
-                'images/stone-block.png',   // Row 3 of 3 of stone
-                'images/grass-block.png',   // Row 1 of 2 of grass
-                'images/grass-block.png'    // Row 2 of 2 of grass
+                'assets/water-block.png',   // Top row is water
+                'assets/stone-block.png',   // Row 1 of 3 of stone
+                'assets/stone-block.png',   // Row 2 of 3 of stone
+                'assets/stone-block.png',   // Row 3 of 3 of stone
+                'assets/grass-block.png',   // Row 1 of 2 of grass
+                'assets/grass-block.png'    // Row 2 of 2 of grass
             ],
             numRows = 6,
             numCols = 5;
@@ -174,12 +174,12 @@ const Engine = (function (global) {
      * all of these images are properly loaded our game will start.
      */
     Resources.load([
-        'images/stone-block.png',
-        'images/water-block.png',
-        'images/grass-block.png',
-        'images/enemy-bug.png',
-        'images/char-boy.png',
-        'images/char-princess-girl.png',
+        'assets/stone-block.png',
+        'assets/water-block.png',
+        'assets/grass-block.png',
+        'assets/enemy-bug.png',
+        'assets/char-boy.png',
+        'assets/char-princess-girl.png',
     ]);
     Resources.onReady(init);
 
