@@ -13,8 +13,8 @@ Use the keyboard arrow keys to move around.
 Technologies used are HTML, CSS, JavaScript (including classes and IIFEs), and the Canvas API.
 
 There are two classes: Hero, used to create the player, and Enemy, used to create instances of the enemy bugs.
-Both the Hero and Enemy classes have render() and update() methods used to render player and enemy sprites as well as update their positions.
-The player has a handleInput() method that responds to keypresses (arrow keys), and a resetHeroPos() method which resets the player's position whenever there is a collision with  an enemy bug.
+Both classes have render() and update() methods used to render player and enemy sprites as well as update their positions.
+The player also has a handleInput() method that responds to keypresses (arrow keys), and a resetHeroPos() method which resets the player's position whenever there is a collision with  an enemy bug.
 
 An engine provides game loop functionality.
 
