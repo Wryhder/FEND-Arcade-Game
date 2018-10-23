@@ -29,7 +29,7 @@ class Hero {
 
         // Check win here
         // Did player's x and y reach final tile?
-        if (this.y === 60) {
+        if (this.y === -23) {
             this.wonGame = true;
             (function showModal() {
                 const modal = document.querySelector('main');
