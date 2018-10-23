@@ -1,3 +1,36 @@
 body {
     text-align: center;
 }
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+main {
+    width: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    height: 100%;
+    max-width: 650px;
+    min-width: 100%;
+    position: absolute;
+    background-color: rgba(54, 40, 40, 0.884);
+}
+
+.game-over img {
+    height: 200px;
+}
