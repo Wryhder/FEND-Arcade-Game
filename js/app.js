@@ -7,7 +7,7 @@ class Hero {
         this.x = this.startX;
         this.y = this.startY;
         this.wonGame = false;
-        this.sprite = 'images/char-princess-girl.png';
+        this.sprite = 'assets/char-princess-girl.png';
     }
 
     // Draw hero sprite on current x and y coord position
