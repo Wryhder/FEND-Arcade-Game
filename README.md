@@ -38,3 +38,4 @@ git clone https://github.com/Wryhder/FEND-Classic-Arcade-Game-Clone.git
 - Add collectible items on screen
 - Add multiple enemy types
 - Track total play time and items collected
+- Add a service worker
