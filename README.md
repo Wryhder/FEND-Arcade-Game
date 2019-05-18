@@ -26,17 +26,3 @@ The game uses an image loading utility to ease the process of loading image file
 git clone https://github.com/Wryhder/FEND-Classic-Arcade-Game-Clone.git
 ```
 2. Spin up a local server or open `index.html` in a browser
-
-
-## Todo
-<!-- - Implement automated integration testing -->
-- Rewrite game from scratch (TDD)
-- Customize all game assets/resources
-- Integrate a storyline
-- Add a game completion modal
-- Player can choose avatar
-- Add collectible items on screen
-- Add multiple enemy types
-- Track total play time and items collected
-- Add a service worker
-- Save game state using local storage
